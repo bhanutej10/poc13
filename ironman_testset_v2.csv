@@ -1,0 +1,201 @@
+id,query,label,domain,ambiguous_term,expected_route,expected_domain
+V001,What is the bike leg cut-off time for the full-distance race?,DOC_RETRIEVAL,Race Operations,bike,call_rag_pipeline,Race Operations
+V002,What are the drafting rules and penalties on the bike course?,DOC_RETRIEVAL,Race Operations,bike,call_rag_pipeline,Race Operations
+V003,How does the rolling swim start work?,DOC_RETRIEVAL,Race Operations,,call_rag_pipeline,Race Operations
+V004,How many athletes finished the race in under 11 hours last year?,STRUCTURED_DATA,Race Operations,,call_text_to_sql,Race Operations
+V005,List the five fastest swim splits from the 2025 race.,STRUCTURED_DATA,Race Operations,,call_text_to_sql,Race Operations
+V006,Which aid station recorded the most DNFs?,STRUCTURED_DATA,Race Operations,,call_text_to_sql,Race Operations
+V007,"Thanks, that explains the cut-off times.",CONVERSATION,Race Operations,,call_chat_llm,General
+V008,"Good morning, are you the race day assistant?",CONVERSATION,Race Operations,,call_chat_llm,General
+V009,Can you say that again more simply?,CONVERSATION,Race Operations,,call_chat_llm,General
+V010,Who is going to win the world championship this year?,UNSUPPORTED,Race Operations,,reply_static,General
+V011,Start the live timing system for the sprint race.,UNSUPPORTED,Race Operations,,reply_static,Race Operations
+V012,Is it going to rain on race day?,UNSUPPORTED,Race Operations,,reply_static,General
+V013,A marshal sent us the wrong way and I got hurt. I want to speak to the race director now.,ESCALATION,Race Operations,,handoff_to_human,Race Operations
+V014,"There is a runner unconscious near the finish line, send help!",ESCALATION,Race Operations,,handoff_to_human,Race Operations
+V015,I'm filing a formal complaint about the race organisers; the course was 2 km short.,ESCALATION,Race Operations,,handoff_to_human,Race Operations
+V016,How do I transfer my race entry to another person?,DOC_RETRIEVAL,Registration and Athlete Services,transfer,call_rag_pipeline,Registration and Athlete Services
+V017,What is the deferral policy if I get injured before race day?,DOC_RETRIEVAL,Registration and Athlete Services,policy,call_rag_pipeline,Registration and Athlete Services
+V018,What do I need to bring to athlete check-in?,DOC_RETRIEVAL,Registration and Athlete Services,,call_rag_pipeline,Registration and Athlete Services
+V019,How many athletes have registered for the Hyderabad 70.3 so far?,STRUCTURED_DATA,Registration and Athlete Services,,call_text_to_sql,Registration and Athlete Services
+V020,Show registrations by country for this event.,STRUCTURED_DATA,Registration and Athlete Services,,call_text_to_sql,Registration and Athlete Services
+V021,What is the registration status of athlete ID 48213?,STRUCTURED_DATA,Registration and Athlete Services,,call_text_to_sql,Registration and Athlete Services
+V022,Hi there!,CONVERSATION,Registration and Athlete Services,,call_chat_llm,General
+V023,"Thanks, that was helpful.",CONVERSATION,Registration and Athlete Services,,call_chat_llm,General
+V024,Can you shorten that answer?,CONVERSATION,Registration and Athlete Services,,call_chat_llm,General
+V025,Transfer my entry to my friend Rahul now.,UNSUPPORTED,Registration and Athlete Services,transfer,reply_static,Registration and Athlete Services
+V026,Which training plan should I follow for my first triathlon?,UNSUPPORTED,Registration and Athlete Services,,reply_static,General
+V027,Cancel my registration and refund me.,UNSUPPORTED,Registration and Athlete Services,cancel;refund,reply_static,Registration and Athlete Services
+V028,I was charged twice for my entry and nobody has replied to my three emails. Get me a manager.,ESCALATION,Registration and Athlete Services,charge,handoff_to_human,Registration and Athlete Services
+V029,I want to talk to a real person about my registration.,ESCALATION,Registration and Athlete Services,,handoff_to_human,Registration and Athlete Services
+V030,Your registration system leaked my passport details and I'm contacting my lawyer.,ESCALATION,Registration and Athlete Services,,handoff_to_human,Registration and Athlete Services
+V031,What is the expense reimbursement policy for staff travel?,DOC_RETRIEVAL,Finance,policy,call_rag_pipeline,Finance
+V032,"What are the approval limits for purchase requests above 5,000 dollars?",DOC_RETRIEVAL,Finance,,call_rag_pipeline,Finance
+V033,How do I submit an invoice to the finance team?,DOC_RETRIEVAL,Finance,invoice,call_rag_pipeline,Finance
+V034,What was the total entry revenue for the Dubai race?,STRUCTURED_DATA,Finance,,call_text_to_sql,Finance
+V035,How many refunds were issued last quarter and for what amount?,STRUCTURED_DATA,Finance,refund,call_text_to_sql,Finance
+V036,List all unpaid invoices older than 60 days.,STRUCTURED_DATA,Finance,invoice,call_text_to_sql,Finance
+V037,"Thanks, that explains the invoice process.",CONVERSATION,Finance,invoice,call_chat_llm,General
+V038,"Hello, good afternoon.",CONVERSATION,Finance,,call_chat_llm,General
+V039,"Okay, thanks. That's all for now.",CONVERSATION,Finance,,call_chat_llm,General
+V040,Should I invest my bonus in mutual funds?,UNSUPPORTED,Finance,,reply_static,Finance
+V041,"Wire 10,000 dollars to the vendor account.",UNSUPPORTED,Finance,account,reply_static,Finance
+V042,What is the current EUR to INR exchange rate?,UNSUPPORTED,Finance,,reply_static,Finance
+V043,I've been billed three times for the same charge and finance keeps ignoring me. I want to dispute it with a person.,ESCALATION,Finance,charge,handoff_to_human,Finance
+V044,I think someone is using my corporate card fraudulently.,ESCALATION,Finance,,handoff_to_human,Finance
+V045,Our vendor says they were never paid and is threatening legal action. Escalate this.,ESCALATION,Finance,,handoff_to_human,Finance
+V046,How do I set up the VPN on my work laptop?,DOC_RETRIEVAL,IT,,call_rag_pipeline,IT
+V047,What is the password policy for company accounts?,DOC_RETRIEVAL,IT,account;policy,call_rag_pipeline,IT
+V048,What is the procedure to request a software licence?,DOC_RETRIEVAL,IT,licen,call_rag_pipeline,IT
+V049,How many open IT tickets are assigned to the network team?,STRUCTURED_DATA,IT,ticket,call_text_to_sql,IT
+V050,List all laptops that are due for replacement this year.,STRUCTURED_DATA,IT,,call_text_to_sql,IT
+V051,Which timing system servers had downtime in the last 30 days?,STRUCTURED_DATA,IT,,call_text_to_sql,IT
+V052,"Thanks, the VPN works now.",CONVERSATION,IT,,call_chat_llm,General
+V053,"Hey, are you an IT bot?",CONVERSATION,IT,,call_chat_llm,General
+V054,Could you explain that in simpler words?,CONVERSATION,IT,,call_chat_llm,General
+V055,Reset my password.,UNSUPPORTED,IT,,reply_static,IT
+V056,Write a Python script to scrape race results from a website.,UNSUPPORTED,IT,,reply_static,General
+V057,Install Microsoft Office on my laptop.,UNSUPPORTED,IT,,reply_static,IT
+V058,Our systems were hacked and athlete data is being leaked. This is a security incident!,ESCALATION,IT,incident,handoff_to_human,IT
+V059,I've raised the same ticket five times and nobody has fixed my laptop. I want to speak to the IT head.,ESCALATION,IT,ticket,handoff_to_human,IT
+V060,I clicked a phishing link and entered my login. I need security help urgently.,ESCALATION,IT,,handoff_to_human,IT
+V061,What is the annual leave policy for full-time employees?,DOC_RETRIEVAL,HR,policy,call_rag_pipeline,HR
+V062,How do I apply for parental leave?,DOC_RETRIEVAL,HR,,call_rag_pipeline,HR
+V063,What is the dress code at the event site?,DOC_RETRIEVAL,HR,,call_rag_pipeline,HR
+V064,How many employees are on leave this week?,STRUCTURED_DATA,HR,,call_text_to_sql,HR
+V065,List the new hires who joined in September.,STRUCTURED_DATA,HR,,call_text_to_sql,HR
+V066,What is the average tenure of the operations team?,STRUCTURED_DATA,HR,,call_text_to_sql,HR
+V067,Thanks for the leave information!,CONVERSATION,HR,,call_chat_llm,General
+V068,Good morning!,CONVERSATION,HR,,call_chat_llm,General
+V069,"Sorry, can you repeat that?",CONVERSATION,HR,,call_chat_llm,General
+V070,Approve my leave request for Friday.,UNSUPPORTED,HR,,reply_static,HR
+V071,Should I quit my job and start a triathlon coaching business?,UNSUPPORTED,HR,,reply_static,General
+V072,Write a funny farewell speech for my colleague.,UNSUPPORTED,HR,,reply_static,General
+V073,My manager keeps harassing me and I want to report it immediately.,ESCALATION,HR,,handoff_to_human,HR
+V074,I haven't received my salary for two months. I need to talk to someone.,ESCALATION,HR,,handoff_to_human,HR
+V075,I'm being discriminated against and I'm considering legal action.,ESCALATION,HR,,handoff_to_human,HR
+V076,What does the participant waiver cover?,DOC_RETRIEVAL,Legal and Compliance,,call_rag_pipeline,Legal and Compliance
+V077,What is our data retention policy for athlete records?,DOC_RETRIEVAL,Legal and Compliance,policy,call_rag_pipeline,Legal and Compliance
+V078,Who needs to review and sign off on a vendor contract?,DOC_RETRIEVAL,Legal and Compliance,contract,call_rag_pipeline,Legal and Compliance
+V079,How many athletes have not signed the waiver yet?,STRUCTURED_DATA,Legal and Compliance,,call_text_to_sql,Legal and Compliance
+V080,List all contracts expiring in the next 90 days.,STRUCTURED_DATA,Legal and Compliance,contract,call_text_to_sql,Legal and Compliance
+V081,How many data deletion requests did we receive this year?,STRUCTURED_DATA,Legal and Compliance,,call_text_to_sql,Legal and Compliance
+V082,"Thank you, that clarifies the waiver.",CONVERSATION,Legal and Compliance,,call_chat_llm,General
+V083,"Hi, can you help me with a compliance question?",CONVERSATION,Legal and Compliance,,call_chat_llm,General
+V084,"Okay, can you give me an example of that?",CONVERSATION,Legal and Compliance,,call_chat_llm,General
+V085,Draft a non-disclosure agreement for me.,UNSUPPORTED,Legal and Compliance,,reply_static,Legal and Compliance
+V086,Delete all records of athlete 5521 from the database.,UNSUPPORTED,Legal and Compliance,,reply_static,Legal and Compliance
+V087,Is it legal to ride a bike without a helmet in Texas?,UNSUPPORTED,Legal and Compliance,bike,reply_static,General
+V088,A law firm has sent us a cease and desist letter about our logo. Who handles this?,ESCALATION,Legal and Compliance,,handoff_to_human,Legal and Compliance
+V089,An athlete is threatening to sue us over the waiver. Connect me to legal.,ESCALATION,Legal and Compliance,,handoff_to_human,Legal and Compliance
+V090,I want to report a possible data protection breach.,ESCALATION,Legal and Compliance,,handoff_to_human,Legal and Compliance
+V091,What is the process to onboard a new vendor?,DOC_RETRIEVAL,Procurement and Vendors,,call_rag_pipeline,Procurement and Vendors
+V092,"What are the requirements for a competitive bid above 20,000 dollars?",DOC_RETRIEVAL,Procurement and Vendors,,call_rag_pipeline,Procurement and Vendors
+V093,What does the supplier code of conduct say about subcontractors?,DOC_RETRIEVAL,Procurement and Vendors,contract,call_rag_pipeline,Procurement and Vendors
+V094,How many purchase orders are pending approval?,STRUCTURED_DATA,Procurement and Vendors,,call_text_to_sql,Procurement and Vendors
+V095,List the top five vendors by spend this year.,STRUCTURED_DATA,Procurement and Vendors,,call_text_to_sql,Procurement and Vendors
+V096,What is the delivery status of PO 77412?,STRUCTURED_DATA,Procurement and Vendors,,call_text_to_sql,Procurement and Vendors
+V097,"Thanks, the vendor steps are clear now.",CONVERSATION,Procurement and Vendors,,call_chat_llm,General
+V098,Hello there.,CONVERSATION,Procurement and Vendors,,call_chat_llm,General
+V099,Can you summarise that in one line?,CONVERSATION,Procurement and Vendors,,call_chat_llm,General
+V100,Place an order for 200 timing chips with our supplier.,UNSUPPORTED,Procurement and Vendors,,reply_static,Procurement and Vendors
+V101,Which is the best brand of triathlon wetsuit?,UNSUPPORTED,Procurement and Vendors,,reply_static,General
+V102,Email the vendor and ask for a discount.,UNSUPPORTED,Procurement and Vendors,,reply_static,Procurement and Vendors
+V103,A supplier delivered faulty barriers and someone got injured. Escalate this to a manager now.,ESCALATION,Procurement and Vendors,,handoff_to_human,Procurement and Vendors
+V104,The vendor is demanding payment and threatening to take us to court.,ESCALATION,Procurement and Vendors,,handoff_to_human,Procurement and Vendors
+V105,I suspect a colleague is taking kickbacks from a vendor and I want to report it.,ESCALATION,Procurement and Vendors,,handoff_to_human,Procurement and Vendors
+V106,What are the brand guidelines for using the IRONMAN logo?,DOC_RETRIEVAL,Marketing and Sponsorship,,call_rag_pipeline,Marketing and Sponsorship
+V107,What benefits are included in the gold sponsorship package?,DOC_RETRIEVAL,Marketing and Sponsorship,package,call_rag_pipeline,Marketing and Sponsorship
+V108,What is the approval process for social media posts about the race?,DOC_RETRIEVAL,Marketing and Sponsorship,,call_rag_pipeline,Marketing and Sponsorship
+V109,How many sponsors signed up for this season?,STRUCTURED_DATA,Marketing and Sponsorship,,call_text_to_sql,Marketing and Sponsorship
+V110,What was the total social media reach of the Sweden race?,STRUCTURED_DATA,Marketing and Sponsorship,,call_text_to_sql,Marketing and Sponsorship
+V111,List the sponsors whose contracts have not been renewed.,STRUCTURED_DATA,Marketing and Sponsorship,contract,call_text_to_sql,Marketing and Sponsorship
+V112,"Thanks, I'll use those brand colours.",CONVERSATION,Marketing and Sponsorship,,call_chat_llm,General
+V113,"Hey, what can you do?",CONVERSATION,Marketing and Sponsorship,,call_chat_llm,General
+V114,"That's great, thanks a lot!",CONVERSATION,Marketing and Sponsorship,,call_chat_llm,General
+V115,Write a catchy Instagram caption for our finish line photo.,UNSUPPORTED,Marketing and Sponsorship,,reply_static,Marketing and Sponsorship
+V116,Post this announcement on our Twitter account.,UNSUPPORTED,Marketing and Sponsorship,account,reply_static,Marketing and Sponsorship
+V117,Which triathlete has the most followers on Instagram?,UNSUPPORTED,Marketing and Sponsorship,,reply_static,General
+V118,A sponsor is furious about their logo being misprinted and is threatening to pull out. Get a manager on the line.,ESCALATION,Marketing and Sponsorship,,handoff_to_human,Marketing and Sponsorship
+V119,Someone is using our logo to sell fake race entries. This is fraud!,ESCALATION,Marketing and Sponsorship,,handoff_to_human,Marketing and Sponsorship
+V120,I want to complain about the offensive content in your latest campaign.,ESCALATION,Marketing and Sponsorship,,handoff_to_human,Marketing and Sponsorship
+V121,What is the heat illness protocol for race day?,DOC_RETRIEVAL,Medical and Safety,,call_rag_pipeline,Medical and Safety
+V122,Where are the medical tents located along the course?,DOC_RETRIEVAL,Medical and Safety,,call_rag_pipeline,Medical and Safety
+V123,What are the safety requirements for helmets?,DOC_RETRIEVAL,Medical and Safety,,call_rag_pipeline,Medical and Safety
+V124,How many athletes visited the medical tent during the last race?,STRUCTURED_DATA,Medical and Safety,,call_text_to_sql,Medical and Safety
+V125,List all incidents reported at the Kona race.,STRUCTURED_DATA,Medical and Safety,incident,call_text_to_sql,Medical and Safety
+V126,What was the most common injury type in 2025?,STRUCTURED_DATA,Medical and Safety,,call_text_to_sql,Medical and Safety
+V127,"Thank you, that is reassuring.",CONVERSATION,Medical and Safety,,call_chat_llm,General
+V128,Good evening!,CONVERSATION,Medical and Safety,,call_chat_llm,General
+V129,Could you repeat the last part?,CONVERSATION,Medical and Safety,,call_chat_llm,General
+V130,Should I take ibuprofen before the race?,UNSUPPORTED,Medical and Safety,,reply_static,Medical and Safety
+V131,Diagnose why my knee hurts when I run.,UNSUPPORTED,Medical and Safety,,reply_static,Medical and Safety
+V132,Book a physiotherapy appointment for me.,UNSUPPORTED,Medical and Safety,,reply_static,Medical and Safety
+V133,An athlete has collapsed and isn't breathing at the swim exit! Help!,ESCALATION,Medical and Safety,,handoff_to_human,Medical and Safety
+V134,A cyclist ignored a marshal and hit me. I want to file a formal incident report with a person.,ESCALATION,Medical and Safety,incident,handoff_to_human,Medical and Safety
+V135,There is a fire in the transition area!,ESCALATION,Medical and Safety,,handoff_to_human,Medical and Safety
+V136,How is bike transport to the venue arranged?,DOC_RETRIEVAL,Facilities and Logistics,bike,call_rag_pipeline,Facilities and Logistics
+V137,What are the parking rules at the expo venue?,DOC_RETRIEVAL,Facilities and Logistics,,call_rag_pipeline,Facilities and Logistics
+V138,What is the checklist for setting up the finish arch?,DOC_RETRIEVAL,Facilities and Logistics,,call_rag_pipeline,Facilities and Logistics
+V139,How many bike racks are allocated to Transition Area B?,STRUCTURED_DATA,Facilities and Logistics,bike,call_text_to_sql,Facilities and Logistics
+V140,List all shipments that have not yet arrived at the venue.,STRUCTURED_DATA,Facilities and Logistics,,call_text_to_sql,Facilities and Logistics
+V141,How many shipping containers are currently en route to the Cozumel venue?,STRUCTURED_DATA,Facilities and Logistics,,call_text_to_sql,Facilities and Logistics
+V142,"Thanks, that settles the parking question.",CONVERSATION,Facilities and Logistics,,call_chat_llm,General
+V143,Hi! Are you available?,CONVERSATION,Facilities and Logistics,,call_chat_llm,General
+V144,"Okay, got it.",CONVERSATION,Facilities and Logistics,,call_chat_llm,General
+V145,Book a truck to move the barriers to the venue.,UNSUPPORTED,Facilities and Logistics,,reply_static,Facilities and Logistics
+V146,What is the best road route from Mumbai to Goa?,UNSUPPORTED,Facilities and Logistics,,reply_static,General
+V147,Turn off the lights in the expo hall.,UNSUPPORTED,Facilities and Logistics,,reply_static,Facilities and Logistics
+V148,The venue is flooded and people are stuck. We need a human to take over immediately.,ESCALATION,Facilities and Logistics,,handoff_to_human,Facilities and Logistics
+V149,My bike was damaged in transport and the logistics team refuses to respond. I want a manager.,ESCALATION,Facilities and Logistics,bike,handoff_to_human,Facilities and Logistics
+V150,There's a gas smell in the warehouse!,ESCALATION,Facilities and Logistics,,handoff_to_human,Facilities and Logistics
+V151,What is the briefing schedule for volunteers on race day?,DOC_RETRIEVAL,Volunteers and Staff Operations,,call_rag_pipeline,Volunteers and Staff Operations
+V152,How do volunteers claim meal vouchers?,DOC_RETRIEVAL,Volunteers and Staff Operations,claim,call_rag_pipeline,Volunteers and Staff Operations
+V153,What training is required for aid station volunteers?,DOC_RETRIEVAL,Volunteers and Staff Operations,,call_rag_pipeline,Volunteers and Staff Operations
+V154,How many volunteers have signed up for the swim start?,STRUCTURED_DATA,Volunteers and Staff Operations,,call_text_to_sql,Volunteers and Staff Operations
+V155,List volunteers who haven't completed safety training.,STRUCTURED_DATA,Volunteers and Staff Operations,,call_text_to_sql,Volunteers and Staff Operations
+V156,Which shifts still have open slots?,STRUCTURED_DATA,Volunteers and Staff Operations,,call_text_to_sql,Volunteers and Staff Operations
+V157,"Thanks, I'll tell the volunteers.",CONVERSATION,Volunteers and Staff Operations,,call_chat_llm,General
+V158,Morning!,CONVERSATION,Volunteers and Staff Operations,,call_chat_llm,General
+V159,Please rephrase that in simple terms.,CONVERSATION,Volunteers and Staff Operations,,call_chat_llm,General
+V160,Assign me to the finish line shift.,UNSUPPORTED,Volunteers and Staff Operations,,reply_static,Volunteers and Staff Operations
+V161,Write a thank-you poem for our volunteers.,UNSUPPORTED,Volunteers and Staff Operations,,reply_static,General
+V162,How many calories does a person burn standing all day?,UNSUPPORTED,Volunteers and Staff Operations,,reply_static,General
+V163,A volunteer was verbally abused by an athlete. I need to report this right away.,ESCALATION,Volunteers and Staff Operations,,handoff_to_human,Volunteers and Staff Operations
+V164,A volunteer fainted from the heat and is not responding!,ESCALATION,Volunteers and Staff Operations,,handoff_to_human,Volunteers and Staff Operations
+V165,Volunteers haven't received meals for two days. I want to speak to the volunteer manager.,ESCALATION,Volunteers and Staff Operations,,handoff_to_human,Volunteers and Staff Operations
+V166,What is the staff travel booking policy for international races?,DOC_RETRIEVAL,Travel and Accommodation,policy,call_rag_pipeline,Travel and Accommodation
+V167,What visa documents do international athletes need for the Dubai race?,DOC_RETRIEVAL,Travel and Accommodation,,call_rag_pipeline,Travel and Accommodation
+V168,What does the athlete accommodation guide say about check-in times?,DOC_RETRIEVAL,Travel and Accommodation,,call_rag_pipeline,Travel and Accommodation
+V169,How many staff members have booked hotels for the Kona race?,STRUCTURED_DATA,Travel and Accommodation,,call_text_to_sql,Travel and Accommodation
+V170,List all flights booked for the operations team in March.,STRUCTURED_DATA,Travel and Accommodation,,call_text_to_sql,Travel and Accommodation
+V171,What is the total accommodation spend for the Barcelona event?,STRUCTURED_DATA,Travel and Accommodation,,call_text_to_sql,Travel and Accommodation
+V172,Thanks for the travel tips!,CONVERSATION,Travel and Accommodation,,call_chat_llm,General
+V173,"Good afternoon, I have a travel question.",CONVERSATION,Travel and Accommodation,,call_chat_llm,General
+V174,Can you explain that again?,CONVERSATION,Travel and Accommodation,,call_chat_llm,General
+V175,Book me a flight to Goa for Friday.,UNSUPPORTED,Travel and Accommodation,,reply_static,Travel and Accommodation
+V176,What is the weather in Dubai next week?,UNSUPPORTED,Travel and Accommodation,,reply_static,General
+V177,Which country has the best beaches?,UNSUPPORTED,Travel and Accommodation,,reply_static,General
+V178,My hotel booking was cancelled the night before and I'm stranded. I need a person to help now.,ESCALATION,Travel and Accommodation,cancel,handoff_to_human,Travel and Accommodation
+V179,I was refused entry at the airport because of a visa error in your guide. I'm contacting my lawyer.,ESCALATION,Travel and Accommodation,,handoff_to_human,Travel and Accommodation
+V180,The hotel charged my card twice and refuses a refund. I want to speak to a manager.,ESCALATION,Travel and Accommodation,charge;refund,handoff_to_human,Travel and Accommodation
+V181,What is the cancellation policy for hotel bookings?,DOC_RETRIEVAL,Cross-domain,cancel;policy,call_rag_pipeline,Travel and Accommodation
+V182,What does the software licence agreement allow?,DOC_RETRIEVAL,Cross-domain,licen,call_rag_pipeline,IT
+V183,Can bank transfers be used to pay the entry fee?,DOC_RETRIEVAL,Cross-domain,transfer,call_rag_pipeline,Finance
+V184,What are the rules for sharing a company account?,DOC_RETRIEVAL,Cross-domain,account,call_rag_pipeline,IT
+V185,How many insurance policies are expiring this month?,STRUCTURED_DATA,Cross-domain,,call_text_to_sql,Finance
+V186,How many support tickets were closed this week?,STRUCTURED_DATA,Cross-domain,ticket,call_text_to_sql,IT
+V187,How many bank transfers were received yesterday?,STRUCTURED_DATA,Cross-domain,transfer,call_text_to_sql,Finance
+V188,What is the account balance for sponsor ID 301?,STRUCTURED_DATA,Cross-domain,account;balance,call_text_to_sql,Finance
+V189,"Thanks, the ticket is sorted now.",CONVERSATION,Cross-domain,ticket,call_chat_llm,General
+V190,"Great, that explains the licence terms.",CONVERSATION,Cross-domain,licen,call_chat_llm,General
+V191,"Okay thanks, now I understand the policy.",CONVERSATION,Cross-domain,policy,call_chat_llm,General
+V192,"Perfect, thanks for the account details.",CONVERSATION,Cross-domain,account,call_chat_llm,General
+V193,Buy two tickets to the expo for me.,UNSUPPORTED,Cross-domain,ticket,reply_static,Registration and Athlete Services
+V194,Should I buy a life insurance policy?,UNSUPPORTED,Cross-domain,policy,reply_static,General
+V195,Transfer 500 dollars to this account.,UNSUPPORTED,Cross-domain,account;transfer,reply_static,Finance
+V196,Which bike should I buy for a triathlon?,UNSUPPORTED,Cross-domain,bike,reply_static,General
+V197,I raised a ticket a week ago and no one has answered. I want to speak to someone.,ESCALATION,Cross-domain,ticket,handoff_to_human,IT
+V198,Someone accessed my account and made purchases I didn't authorise.,ESCALATION,Cross-domain,account,handoff_to_human,IT
+V199,Your cancellation policy is a scam and I'm taking this to consumer court.,ESCALATION,Cross-domain,cancel;policy,handoff_to_human,Registration and Athlete Services
+V200,My bike was stolen from the transition area. I need to talk to security.,ESCALATION,Cross-domain,bike,handoff_to_human,Race Operations

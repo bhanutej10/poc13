@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+anthropic
+pandas
+openpyxl
+httpx
+pytest
+scikit-learn
+tabulate

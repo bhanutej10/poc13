@@ -1,0 +1,198 @@
+"""Labeled test set for POC-013 (domain: event-operations assistant).
+
+30 queries per intent = 150 total. Items marked HARD are deliberately
+confusable with a neighbouring intent (e.g. "refund policy" vs "total refunds").
+Split: every third item per intent (index % 3 == 2) goes to HELDOUT; the rest
+are DEV. Few-shot examples for the LLM prompt are drawn from DEV only.
+"""
+
+HARD = "*"  # suffix marker on a query string
+
+DOC_RETRIEVAL = [
+    "What is the refund policy for cancelled registrations?*",
+    "How do I transfer my race entry to another person?",
+    "What items are prohibited in the transition area?",
+    "Explain the process for requesting a medical deferral.",
+    "What does the athlete guide say about wetsuit rules?",
+    "Where can I find the code of conduct for volunteers?",
+    "What are the steps to onboard a new vendor?",
+    "Summarize the data retention policy.",
+    "What is the dress code for staff at the venue?",
+    "How does the appeals process work for disqualifications?",
+    "What are the cut-off times for the bike course?",
+    "Is there a policy on drones at events?",
+    "What's covered under the event insurance terms?",
+    "How do I set up two-factor authentication according to the IT guide?",
+    "What are the accessibility accommodations offered at the venue?",
+    "Can you explain the rules around drafting?",
+    "What does the sponsorship agreement say about logo usage?",
+    "Describe the emergency evacuation procedure.",
+    "What are the requirements for bringing a guest into the expo?",
+    "how do i submit an expense report per the finance handbook",
+    "what's the policy on late check-in",
+    "Tell me about the onsite parking guidelines.",
+    "What are the eligibility criteria for the elite qualification slots?*",
+    "According to the handbook, how many days of leave can be carried over?*",
+    "What should I pack according to the race briefing?",
+    "What is the process for reporting a safety incident?*",
+    "Walk me through the packet pickup procedure.",
+    "What does our brand guideline say about typography?",
+    "Which documents are needed for international participants' visa letters?",
+    "How are penalties assessed for equipment violations?",
+]
+
+STRUCTURED_DATA = [
+    "How many athletes registered for the Hyderabad event?",
+    "List all events scheduled for next month.",
+    "What was total registration revenue last quarter?",
+    "Show me the top 10 finishers by time.",
+    "Which volunteers have not checked in yet?",
+    "What's the average finish time for the 40-44 age group?",
+    "How many tickets were sold yesterday?",
+    "Give me the registration status for athlete ID 48213.",
+    "Count of cancelled orders in September.",
+    "Which sponsors have outstanding invoices?",
+    "Show all registrations from Germany.",
+    "What is the capacity utilization for each venue?",
+    "How many people are on the waitlist for the 70.3?",
+    "List the vendors with contracts expiring this year.",
+    "What's the month-over-month growth in sign-ups?",
+    "Pull the finishers who were disqualified.*",
+    "total refunds issued in 2025*",
+    "how many volunteers per shift on Saturday",
+    "What's the median age of participants?",
+    "Show orders over $500 placed this week.",
+    "Which events have fewer than 100 registrations?",
+    "Number of female athletes by country.",
+    "What is John Smith's bib number?",
+    "List staff assigned to the finish line.",
+    "What percentage of entries were transferred?*",
+    "Compare registrations between 2024 and 2025.",
+    "How much inventory of medals do we have left?",
+    "Show the 5 busiest check-in hours.",
+    "Which athletes registered in the last 24 hours?",
+    "What's the no-show rate for the last event?",
+]
+
+CONVERSATION = [
+    "Hi there!",
+    "Hello",
+    "Thanks, that helps a lot.",
+    "Good morning",
+    "What can you do?",
+    "Who are you?",
+    "Can you repeat that?",
+    "Great, thank you!",
+    "Never mind",
+    "ok got it",
+    "Can you explain that in simpler words?*",
+    "That's not what I meant.",
+    "Bye!",
+    "How are you today?",
+    "Are you a bot?",
+    "Yes please go ahead",
+    "No, that's all",
+    "What did I just ask you?",
+    "Can you rephrase your last answer?",
+    "Awesome",
+    "Hey, quick question",
+    "Sorry, I made a typo.",
+    "You're really helpful",
+    "Let's start over",
+    "Can you give me a shorter version?*",
+    "Hmm, interesting",
+    "Who built you?",
+    "Okay, what next?",
+    "Thanks for your help today",
+    "Tell me more about what you just said*",
+]
+
+UNSUPPORTED = [
+    "What's the weather in Hyderabad tomorrow?",
+    "Write me a Python script to scrape a website.",
+    "Who won the cricket world cup in 2011?",
+    "What's the best pizza recipe?",
+    "Can you book me a flight to Mumbai?",
+    "Translate this paragraph into French.",
+    "What stocks should I buy right now?",
+    "Diagnose my headache.",
+    "Tell me a joke.",
+    "Write a poem about the ocean.",
+    "What is the capital of Australia?",
+    "Help me with my calculus homework.",
+    "Delete all records from the database.*",
+    "Send an email to the whole team.*",
+    "What's the meaning of life?",
+    "Generate an image of a mountain.",
+    "Predict next year's lottery numbers.",
+    "Who should I vote for?",
+    "How do I hack my neighbor's wifi?",
+    "Order me a coffee.",
+    "Reset my bank password.*",
+    "What's the latest news on the election?",
+    "Play some music.",
+    "Summarize this YouTube video.",
+    "Explain quantum entanglement.",
+    "Can you set a reminder for 5 pm?",
+    "What's Bitcoin trading at?",
+    "Plan my honeymoon in Bali.",
+    "Write my college essay.",
+    "Fix my car's engine light.",
+]
+
+ESCALATION = [
+    "I want to speak to a human.",
+    "This is unacceptable, I demand a refund now!*",
+    "Connect me with a manager.",
+    "I'm going to sue you if this isn't fixed.",
+    "Someone collapsed on the course, we need medical help!",
+    "I was charged twice and nobody is helping me.*",
+    "Transfer me to customer support.",
+    "I've emailed three times and got no reply, this is ridiculous.",
+    "My account was hacked and money is missing.",
+    "I want to file a formal complaint.",
+    "I think there's a data breach, customer data is exposed.",
+    "There's a fire alarm going off at the venue.",
+    "Your system lost my registration and the race is tomorrow, please get someone on the phone.*",
+    "I need to talk to a real person.",
+    "This is discrimination and I'm reporting it to the authorities.",
+    "Escalate this ticket to your supervisor.",
+    "I've been waiting two weeks for my refund. Get me someone senior.*",
+    "A volunteer harassed me at the aid station.",
+    "I'm contacting my lawyer about this.",
+    "Agent please",
+    "Stop sending me automated answers, I need an actual person",
+    "Child is missing at the expo, help!",
+    "I'm extremely upset with how I was treated by your staff.",
+    "Please call me, it's urgent.",
+    "I want to cancel my contract and speak to someone about penalties.*",
+    "The payment portal charged my card but shows no registration; I need a human to look at this now.*",
+    "There's a safety hazard on the bike route, send someone.",
+    "Report a staff member for misconduct.",
+    "I've been scammed by someone claiming to be your organisation.",
+    "Human operator, now.",
+]
+
+BY_INTENT = {
+    "DOC_RETRIEVAL": DOC_RETRIEVAL,
+    "STRUCTURED_DATA": STRUCTURED_DATA,
+    "CONVERSATION": CONVERSATION,
+    "UNSUPPORTED": UNSUPPORTED,
+    "ESCALATION": ESCALATION,
+}
+
+
+def rows():
+    """Yield dicts: id, query, label, difficulty, split."""
+    n = 0
+    for label, items in BY_INTENT.items():
+        for i, q in enumerate(items):
+            n += 1
+            hard = q.endswith(HARD)
+            yield {
+                "id": f"Q{n:03d}",
+                "query": q.rstrip(HARD),
+                "label": label,
+                "difficulty": "hard" if hard else "easy",
+                "split": "heldout" if i % 3 == 2 else "dev",
+            }

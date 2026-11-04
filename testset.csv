@@ -1,0 +1,151 @@
+id,query,label,difficulty,split
+Q001,What is the refund policy for cancelled registrations?,DOC_RETRIEVAL,hard,dev
+Q002,How do I transfer my race entry to another person?,DOC_RETRIEVAL,easy,dev
+Q003,What items are prohibited in the transition area?,DOC_RETRIEVAL,easy,heldout
+Q004,Explain the process for requesting a medical deferral.,DOC_RETRIEVAL,easy,dev
+Q005,What does the athlete guide say about wetsuit rules?,DOC_RETRIEVAL,easy,dev
+Q006,Where can I find the code of conduct for volunteers?,DOC_RETRIEVAL,easy,heldout
+Q007,What are the steps to onboard a new vendor?,DOC_RETRIEVAL,easy,dev
+Q008,Summarize the data retention policy.,DOC_RETRIEVAL,easy,dev
+Q009,What is the dress code for staff at the venue?,DOC_RETRIEVAL,easy,heldout
+Q010,How does the appeals process work for disqualifications?,DOC_RETRIEVAL,easy,dev
+Q011,What are the cut-off times for the bike course?,DOC_RETRIEVAL,easy,dev
+Q012,Is there a policy on drones at events?,DOC_RETRIEVAL,easy,heldout
+Q013,What's covered under the event insurance terms?,DOC_RETRIEVAL,easy,dev
+Q014,How do I set up two-factor authentication according to the IT guide?,DOC_RETRIEVAL,easy,dev
+Q015,What are the accessibility accommodations offered at the venue?,DOC_RETRIEVAL,easy,heldout
+Q016,Can you explain the rules around drafting?,DOC_RETRIEVAL,easy,dev
+Q017,What does the sponsorship agreement say about logo usage?,DOC_RETRIEVAL,easy,dev
+Q018,Describe the emergency evacuation procedure.,DOC_RETRIEVAL,easy,heldout
+Q019,What are the requirements for bringing a guest into the expo?,DOC_RETRIEVAL,easy,dev
+Q020,how do i submit an expense report per the finance handbook,DOC_RETRIEVAL,easy,dev
+Q021,what's the policy on late check-in,DOC_RETRIEVAL,easy,heldout
+Q022,Tell me about the onsite parking guidelines.,DOC_RETRIEVAL,easy,dev
+Q023,What are the eligibility criteria for the elite qualification slots?,DOC_RETRIEVAL,hard,dev
+Q024,"According to the handbook, how many days of leave can be carried over?",DOC_RETRIEVAL,hard,heldout
+Q025,What should I pack according to the race briefing?,DOC_RETRIEVAL,easy,dev
+Q026,What is the process for reporting a safety incident?,DOC_RETRIEVAL,hard,dev
+Q027,Walk me through the packet pickup procedure.,DOC_RETRIEVAL,easy,heldout
+Q028,What does our brand guideline say about typography?,DOC_RETRIEVAL,easy,dev
+Q029,Which documents are needed for international participants' visa letters?,DOC_RETRIEVAL,easy,dev
+Q030,How are penalties assessed for equipment violations?,DOC_RETRIEVAL,easy,heldout
+Q031,How many athletes registered for the Hyderabad event?,STRUCTURED_DATA,easy,dev
+Q032,List all events scheduled for next month.,STRUCTURED_DATA,easy,dev
+Q033,What was total registration revenue last quarter?,STRUCTURED_DATA,easy,heldout
+Q034,Show me the top 10 finishers by time.,STRUCTURED_DATA,easy,dev
+Q035,Which volunteers have not checked in yet?,STRUCTURED_DATA,easy,dev
+Q036,What's the average finish time for the 40-44 age group?,STRUCTURED_DATA,easy,heldout
+Q037,How many tickets were sold yesterday?,STRUCTURED_DATA,easy,dev
+Q038,Give me the registration status for athlete ID 48213.,STRUCTURED_DATA,easy,dev
+Q039,Count of cancelled orders in September.,STRUCTURED_DATA,easy,heldout
+Q040,Which sponsors have outstanding invoices?,STRUCTURED_DATA,easy,dev
+Q041,Show all registrations from Germany.,STRUCTURED_DATA,easy,dev
+Q042,What is the capacity utilization for each venue?,STRUCTURED_DATA,easy,heldout
+Q043,How many people are on the waitlist for the 70.3?,STRUCTURED_DATA,easy,dev
+Q044,List the vendors with contracts expiring this year.,STRUCTURED_DATA,easy,dev
+Q045,What's the month-over-month growth in sign-ups?,STRUCTURED_DATA,easy,heldout
+Q046,Pull the finishers who were disqualified.,STRUCTURED_DATA,hard,dev
+Q047,total refunds issued in 2025,STRUCTURED_DATA,hard,dev
+Q048,how many volunteers per shift on Saturday,STRUCTURED_DATA,easy,heldout
+Q049,What's the median age of participants?,STRUCTURED_DATA,easy,dev
+Q050,Show orders over $500 placed this week.,STRUCTURED_DATA,easy,dev
+Q051,Which events have fewer than 100 registrations?,STRUCTURED_DATA,easy,heldout
+Q052,Number of female athletes by country.,STRUCTURED_DATA,easy,dev
+Q053,What is John Smith's bib number?,STRUCTURED_DATA,easy,dev
+Q054,List staff assigned to the finish line.,STRUCTURED_DATA,easy,heldout
+Q055,What percentage of entries were transferred?,STRUCTURED_DATA,hard,dev
+Q056,Compare registrations between 2024 and 2025.,STRUCTURED_DATA,easy,dev
+Q057,How much inventory of medals do we have left?,STRUCTURED_DATA,easy,heldout
+Q058,Show the 5 busiest check-in hours.,STRUCTURED_DATA,easy,dev
+Q059,Which athletes registered in the last 24 hours?,STRUCTURED_DATA,easy,dev
+Q060,What's the no-show rate for the last event?,STRUCTURED_DATA,easy,heldout
+Q061,Hi there!,CONVERSATION,easy,dev
+Q062,Hello,CONVERSATION,easy,dev
+Q063,"Thanks, that helps a lot.",CONVERSATION,easy,heldout
+Q064,Good morning,CONVERSATION,easy,dev
+Q065,What can you do?,CONVERSATION,easy,dev
+Q066,Who are you?,CONVERSATION,easy,heldout
+Q067,Can you repeat that?,CONVERSATION,easy,dev
+Q068,"Great, thank you!",CONVERSATION,easy,dev
+Q069,Never mind,CONVERSATION,easy,heldout
+Q070,ok got it,CONVERSATION,easy,dev
+Q071,Can you explain that in simpler words?,CONVERSATION,hard,dev
+Q072,That's not what I meant.,CONVERSATION,easy,heldout
+Q073,Bye!,CONVERSATION,easy,dev
+Q074,How are you today?,CONVERSATION,easy,dev
+Q075,Are you a bot?,CONVERSATION,easy,heldout
+Q076,Yes please go ahead,CONVERSATION,easy,dev
+Q077,"No, that's all",CONVERSATION,easy,dev
+Q078,What did I just ask you?,CONVERSATION,easy,heldout
+Q079,Can you rephrase your last answer?,CONVERSATION,easy,dev
+Q080,Awesome,CONVERSATION,easy,dev
+Q081,"Hey, quick question",CONVERSATION,easy,heldout
+Q082,"Sorry, I made a typo.",CONVERSATION,easy,dev
+Q083,You're really helpful,CONVERSATION,easy,dev
+Q084,Let's start over,CONVERSATION,easy,heldout
+Q085,Can you give me a shorter version?,CONVERSATION,hard,dev
+Q086,"Hmm, interesting",CONVERSATION,easy,dev
+Q087,Who built you?,CONVERSATION,easy,heldout
+Q088,"Okay, what next?",CONVERSATION,easy,dev
+Q089,Thanks for your help today,CONVERSATION,easy,dev
+Q090,Tell me more about what you just said,CONVERSATION,hard,heldout
+Q091,What's the weather in Hyderabad tomorrow?,UNSUPPORTED,easy,dev
+Q092,Write me a Python script to scrape a website.,UNSUPPORTED,easy,dev
+Q093,Who won the cricket world cup in 2011?,UNSUPPORTED,easy,heldout
+Q094,What's the best pizza recipe?,UNSUPPORTED,easy,dev
+Q095,Can you book me a flight to Mumbai?,UNSUPPORTED,easy,dev
+Q096,Translate this paragraph into French.,UNSUPPORTED,easy,heldout
+Q097,What stocks should I buy right now?,UNSUPPORTED,easy,dev
+Q098,Diagnose my headache.,UNSUPPORTED,easy,dev
+Q099,Tell me a joke.,UNSUPPORTED,easy,heldout
+Q100,Write a poem about the ocean.,UNSUPPORTED,easy,dev
+Q101,What is the capital of Australia?,UNSUPPORTED,easy,dev
+Q102,Help me with my calculus homework.,UNSUPPORTED,easy,heldout
+Q103,Delete all records from the database.,UNSUPPORTED,hard,dev
+Q104,Send an email to the whole team.,UNSUPPORTED,hard,dev
+Q105,What's the meaning of life?,UNSUPPORTED,easy,heldout
+Q106,Generate an image of a mountain.,UNSUPPORTED,easy,dev
+Q107,Predict next year's lottery numbers.,UNSUPPORTED,easy,dev
+Q108,Who should I vote for?,UNSUPPORTED,easy,heldout
+Q109,How do I hack my neighbor's wifi?,UNSUPPORTED,easy,dev
+Q110,Order me a coffee.,UNSUPPORTED,easy,dev
+Q111,Reset my bank password.,UNSUPPORTED,hard,heldout
+Q112,What's the latest news on the election?,UNSUPPORTED,easy,dev
+Q113,Play some music.,UNSUPPORTED,easy,dev
+Q114,Summarize this YouTube video.,UNSUPPORTED,easy,heldout
+Q115,Explain quantum entanglement.,UNSUPPORTED,easy,dev
+Q116,Can you set a reminder for 5 pm?,UNSUPPORTED,easy,dev
+Q117,What's Bitcoin trading at?,UNSUPPORTED,easy,heldout
+Q118,Plan my honeymoon in Bali.,UNSUPPORTED,easy,dev
+Q119,Write my college essay.,UNSUPPORTED,easy,dev
+Q120,Fix my car's engine light.,UNSUPPORTED,easy,heldout
+Q121,I want to speak to a human.,ESCALATION,easy,dev
+Q122,"This is unacceptable, I demand a refund now!",ESCALATION,hard,dev
+Q123,Connect me with a manager.,ESCALATION,easy,heldout
+Q124,I'm going to sue you if this isn't fixed.,ESCALATION,easy,dev
+Q125,"Someone collapsed on the course, we need medical help!",ESCALATION,easy,dev
+Q126,I was charged twice and nobody is helping me.,ESCALATION,hard,heldout
+Q127,Transfer me to customer support.,ESCALATION,easy,dev
+Q128,"I've emailed three times and got no reply, this is ridiculous.",ESCALATION,easy,dev
+Q129,My account was hacked and money is missing.,ESCALATION,easy,heldout
+Q130,I want to file a formal complaint.,ESCALATION,easy,dev
+Q131,"I think there's a data breach, customer data is exposed.",ESCALATION,easy,dev
+Q132,There's a fire alarm going off at the venue.,ESCALATION,easy,heldout
+Q133,"Your system lost my registration and the race is tomorrow, please get someone on the phone.",ESCALATION,hard,dev
+Q134,I need to talk to a real person.,ESCALATION,easy,dev
+Q135,This is discrimination and I'm reporting it to the authorities.,ESCALATION,easy,heldout
+Q136,Escalate this ticket to your supervisor.,ESCALATION,easy,dev
+Q137,I've been waiting two weeks for my refund. Get me someone senior.,ESCALATION,hard,dev
+Q138,A volunteer harassed me at the aid station.,ESCALATION,easy,heldout
+Q139,I'm contacting my lawyer about this.,ESCALATION,easy,dev
+Q140,Agent please,ESCALATION,easy,dev
+Q141,"Stop sending me automated answers, I need an actual person",ESCALATION,easy,heldout
+Q142,"Child is missing at the expo, help!",ESCALATION,easy,dev
+Q143,I'm extremely upset with how I was treated by your staff.,ESCALATION,easy,dev
+Q144,"Please call me, it's urgent.",ESCALATION,easy,heldout
+Q145,I want to cancel my contract and speak to someone about penalties.,ESCALATION,hard,dev
+Q146,The payment portal charged my card but shows no registration; I need a human to look at this now.,ESCALATION,hard,dev
+Q147,"There's a safety hazard on the bike route, send someone.",ESCALATION,easy,heldout
+Q148,Report a staff member for misconduct.,ESCALATION,easy,dev
+Q149,I've been scammed by someone claiming to be your organisation.,ESCALATION,easy,dev
+Q150,"Human operator, now.",ESCALATION,easy,heldout

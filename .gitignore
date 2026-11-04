@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+results_*
+.test_run_*.lock
+*.zip

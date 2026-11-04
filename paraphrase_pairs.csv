@@ -1,0 +1,48 @@
+original,other,should_match,tier,note
+What is the refund policy?,Refund policy?,1,easy,shorter wording
+What is the refund policy?,Tell me about the refund rules,1,easy,policy ~ rules
+How many athletes have registered for the Hyderabad 70.3 so far?,What is the number of athletes registered for the Hyderabad 70.3 so far?,1,easy,
+How do I transfer my race entry to another person?,How can I transfer my race registration to someone else?,1,easy,entry ~ registration
+What is the cut-off time for the swim leg?,What's the swim leg cutoff time?,1,easy,
+List the top five vendors by spend this year.,Show me the top five vendors by spend this year,1,easy,
+Can I bring a support person into the transition area?,Am I allowed to bring a support person into the transition area?,1,easy,
+How do I set up the VPN on my work laptop?,How can I set up VPN on my work computer?,1,easy,laptop ~ computer
+What is the password policy for company accounts?,What are the rules for company account passwords?,1,easy,
+What is the heat illness protocol for race day?,What's the protocol for heat illness on race day?,1,easy,
+How many bike racks are allocated to Transition Area B?,How many bike racks have been allocated to Transition Area B?,1,easy,
+What does the participant waiver cover?,What is covered by the participant waiver?,1,easy,
+How do volunteers claim meal vouchers?,How can volunteers claim their meal vouchers?,1,easy,
+Who is going to win the world championship this year?,Who will win the world championship this year?,1,easy,
+Book me a flight to Goa for Friday.,Please book a flight to Goa for Friday,1,easy,
+I want to talk to a real person about my registration.,Can I speak with a real person about my registration?,1,easy,
+What is the dress code at the event site?,What is the dress code for the event site?,1,easy,
+Should I take ibuprofen before the race?,Is it okay to take ibuprofen before the race?,1,easy,
+What is the refund policy?,How do I get my money back?,1,hard,no shared keywords
+How do I transfer my race entry to another person?,Can I give my race slot to a friend?,1,hard,no shared keywords
+What items are prohibited in the transition area?,What am I not allowed to leave in transition?,1,hard,different vocabulary and negation
+How many athletes finished the race in under 11 hours last year?,"Last year, how many people completed the race in less than 11 hours?",1,hard,synonyms finished ~ completed
+What is the cancellation policy for hotel bookings?,Can I cancel my hotel booking and get my money back?,1,hard,
+Where are the medical tents located along the course?,Where can I find the medical tents on the course?,1,hard,
+What is the refund policy?,How many refunds were issued?,0,intent,rule vs count
+What is the transfer policy?,Transfer my entry now.,0,intent,question vs action
+How many tickets are open?,Buy two tickets.,0,intent,count vs action
+What is the refund policy?,"I want a refund and a manager, now!",0,intent,rule vs complaint
+How do I reset my password?,What is the password policy?,0,intent,procedure vs rule
+Hi there!,"Hi, I have a complaint about my hotel",0,intent,greeting vs complaint
+A runner collapsed near the finish line!,A runner finished near the finish line,0,intent,emergency vs info
+What is the status of athlete ID 48213?,What is the status of athlete ID 48214?,0,detail,different ID
+List all unpaid invoices older than 60 days.,List all unpaid invoices older than 90 days.,0,detail,different number
+Please transfer 500 dollars to this account.,Please transfer 700 dollars to this account.,0,detail,different amount
+Who won the 2024 world championship?,Who won the 2023 world championship?,0,detail,different year
+What is the registration deadline for the 70.3?,What is the registration deadline for the full race?,0,detail,different event
+What is the cut-off time for the Dubai race?,What is the cut-off time for the Kona race?,0,detail,different place
+What is the weather in Dubai next week?,What is the weather in Paris next week?,0,detail,different place
+How many athletes registered last year?,How many athletes registered this year?,0,detail,different period
+Which items are allowed in the transition area?,Which items are not allowed in the transition area?,0,detail,negation
+What is the leave policy?,What is the travel policy?,0,detail,different topic
+Reset my password.,Reset my laptop.,0,detail,different object
+Cancel my registration.,Cancel my hotel booking.,0,detail,different object
+What is the drafting penalty?,What is the littering penalty?,0,detail,different topic
+How many volunteers signed up for the swim start?,How many volunteers signed up for the run start?,0,detail,swim vs run
+How many refunds were issued last quarter?,How many invoices were issued last quarter?,0,detail,refund vs invoice
+Tell me about the gold sponsorship package,Tell me about the silver sponsorship package,0,detail,gold vs silver
